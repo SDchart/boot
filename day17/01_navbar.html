@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="parent">
+        <div class="card">
+            <div class="card-header"><a class="data-link" href="#c1" data-toggle="collapse">折叠1</a></div>
+            <div data-parent="#parent" id="c1" class="collapse"><div class="card-body">卡片1<hr>卡片2</div></div>
+        </div>
+        <div class="card">
+            <div class="card-header"><a class="data-link" href="#c2" data-toggle="collapse">折叠2</a></div>
+            <div data-parent="#parent" id="c2" class="collapse"><div class="card-body">卡片3<hr>卡片4</div></div>
+        </div>
+        <div class="card">
+            <div class="card-header"><a class="data-link" href="#c3" data-toggle="collapse">折叠3</a></div>
+            <div data-parent="#parent" id="c3" class="collapse"><div class="card-body">卡片5<hr>卡片6</div></div>
+        </div>
+    </div>
+    <h1>导航栏</h1>
+    <div class="navbar navbar-expand-lg bg-warning">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Tab1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tab2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tab3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tab4</a></li>
+        </ul>
+    </div>
+    <h1>折叠</h1>
+    <button class="btn btn-sucess" data-toggle="collapse" data-target="#demo">折叠</button>
+    <div id="demo" class="collapse">内容</div>
+    <h1>手风琴</h1>
+    <div id="pp">
+        <div class="card">
+            <div class="card-header"><a href="#d1" class="card-link" data-toggle="collapse">选项一</a></div>
+            <div data-parent="#pp" id="d1" class="collapse">
+                <div class="card-body">鸡汤1</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><a href="#d2" class="card-link" data-toggle="collapse">选项二</a></div>
+            <div data-parent="#pp" id="d2" class="collapse">
+                <div class="card-body">鸡汤2</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><a href="#d3" class="card-link" data-toggle="collapse">选项三</a></div>
+            <div data-parent="#pp" id="d3" class="collapse">
+                <div class="card-body">鸡汤3</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

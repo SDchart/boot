@@ -1,0 +1,16 @@
+h6 {
+  color: #00f;
+  width: 100px; }
+
+.mybtn {
+  weight: 5rem;
+  height: 2.5rem;
+  background-color: #0aa1ed;
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2.5rem; }
+  .mybtn:hover {
+    color: #f10215; }

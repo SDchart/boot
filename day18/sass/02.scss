@@ -1,0 +1,48 @@
+@function get_w($n){
+  @if($n>1){
+    @return 200px;
+  }@else if($n==1){
+    @return 100px;
+  }@else if($n<1){
+    @return 0;
+  }
+}
+div{
+  height: get_w(0.5);
+}
+
+@function get_mywidth($n){
+  $w1:60px;
+  $w2:10px;
+  @return $n*max($w1,$w2)+$n*min($w1,$w2);
+}
+span{
+  width:get_mywidth(3);
+}
+@function get-width(){
+  $max-width:40px;
+  $min-width:10px;
+  @return $max-width - $min-width
+}
+div{
+  width:get-width();
+}
+p{
+  font-size: 10px/5px;
+  $width:1000px;
+  width:$width/2;
+  height: (500px/2px);
+  margin-left: 5px+8px/2px;
+}
+div:before{
+  content: unquote("dsffoasfasdgghhgs");
+}
+#content{
+  color:rgb(199,55,33) + rgb(210,145,222);
+  content:"liangliang ate #{50+30}" baozi;
+}
+$my_width150:150px;
+$my_width130:130px;
+.div{
+  width: $my_width150 - $my_width130;
+}

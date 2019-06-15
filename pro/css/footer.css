@@ -1,0 +1,25 @@
+.container>ul{
+    justify-content: space-around;
+}
+.container>ul>li>p{
+    font-size: 0.9rem;
+    color: #666666;
+}
+div.row{
+    background: #ffffff;
+}
+div.col-4>ul>li:first-child{
+    font-size: 0.9rem;
+    color: #333333;
+}
+div.col-4>ul>li{
+    text-align: center;
+}
+div.col-4>ul>li>a{
+    font-size: 0.75rem;
+    color: #666666;
+}
+div.col-4>ul>li>a:hover{
+    color: #333333;
+    text-decoration: none;
+}

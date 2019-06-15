@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <style>
+        .fixed-action-btn {
+            position: static;
+            padding-top: 0;
+        }
+        .fixed-action-btn .btn-floating {
+            width: 40px;
+            height: 40px;
+        }
+        .ham-cont {
+            margin-left: -11px;
+            margin-top: -2px;
+        }
+        .ham-cont .very_small_hamburger {
+            padding-top: 0;
+        }
+        .ham-cont svg {
+            width: 60px;
+            height: 40px;
+        }
+        .very_small_hamburger svg {
+            cursor: pointer;
+            transform: translate3d(0, 0, 0);
+        }
+        .very_small_hamburger path.top, .very_small_hamburger path.bottom {
+            stroke-dasharray: 240px 950px;
+        }
+        .very_small_hamburger path {
+            fill: none;
+            transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+            stroke-width: 40px;
+            stroke-linecap: round;
+            stroke: #ffffff;
+            stroke-dashoffset: 0px;
+        }
+        .very_small_hamburger path.middle {
+            stroke-dasharray: 240px 240px;
+        }
+        .fixed-action-btn ul {
+            bottom: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large waves-effect waves-light grey darken-4">
+            <div class="ham-cont">
+                <div class="very_small_hamburger" id="social-hamburger">
+                    <svg viewBox="0 0 800 600">
+                        <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top"></path>
+                        <path d="M300,320 L540,320" class="middle"></path>
+                        <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                    </svg>
+                </div>
+            </div>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating waves-effect waves-light blue" href="https://www.facebook.com/MrHabitApp" target="_blank" title="Facebook" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating waves-effect waves-light light-blue lighten-2" href="https://twitter.com/MrHabitApp" target="_blank" title="Twitter" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    (function ($) {
+        "use strict";
+        $(document).ready(function () {
+            var $socialHamburger = $('#social-hamburger');
+            $socialHamburger.on('click', function () {
+                $(this).toggleClass('open')
+            });
+        });
+    })();
+</script>
+</body>
+</html>

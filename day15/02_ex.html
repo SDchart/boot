@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .row>div:first-child{
+            height: 50px;
+            background: #333;
+            line-height: 50px;
+        }
+        .row>div:first-child,.row>div:first-child>a{
+            color: #aaa;
+        }
+        .row>div:first-child>a{
+            font-size: 12px;
+        }
+        .btn-new{
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .row>div:nth-child(2){
+            height: 440px;
+            background-image: linear-gradient(to right,#0d0535 0%,#592a4c 100%);
+            padding-top: 90px;
+            display:flex;
+            flex-direction: column;
+        }
+        .row>div:nth-child(2)>h1,.row>div:nth-child(2)>h4,.row>div:nth-child(2)>a{
+            margin: 0.5rem auto;
+        }
+        .row>div:nth-child(2)>h1{
+            font-size: 6rem;
+            color: #fff;
+        }
+        .row>div:nth-child(2)>h4{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #666;
+        }
+        .row>div:last-child{
+            padding: 0;
+        }
+        @media screen and (min-width: 992px){
+            .row>div:last-child>img{
+                width: 25%;
+            }
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px){
+            .row>div:last-child>img{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 767px){
+            .row>div:last-child>img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 pl-5">Bootstrap中文网
+            <a class="ml-4" href="#">起步</a>
+            <a class="ml-4" href="#">全局CSS样式</a>
+            <a class="ml-4" href="#">组件</a>
+            <a class="ml-4" href="#">JavaScript插件</a>
+            <a class="ml-4" href="#">定制</a>
+        </div>
+        <div class="col-12">
+            <h1>Bootstrap</h1>
+            <h4>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</h4>
+            <a class="btn btn-info" href="#">Bootstrap中文文档(v4.0.0)</a>
+            <a class="btn btn-new" href="#">Bootstrap中文文档(v3.3.7)</a>
+        </div>
+        <div class="col-12">
+            <img class="img-fluid" src="../newfolder/img/boot-1.png" alt=""><img class="img-fluid" src="../newfolder/img/boot-2.png" alt=""><img class="img-fluid" src="../newfolder/img/boot-3.png" alt=""><img class="img-fluid" src="../newfolder/img/boot-4.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

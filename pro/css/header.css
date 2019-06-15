@@ -1,0 +1,30 @@
+.form-control{
+    height: 34px;
+    border-color: #0aa1ed;
+    border-radius: 0px;
+}
+.form-control:focus{
+    border-color: #0aa1ed;
+    box-shadow: none;
+}
+.breadcrumb{
+    background-color: #f5f5f5;
+}
+.breadcrumb>.breadcrumb-item>a{
+    font-size: 12px;
+    color: #808080;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '|';
+}
+.breadcrumb>.breadcrumb-item:hover>a{
+    text-decoration: none;
+    color: #0aa1ed;
+}
+.nav>.nav-item>a{
+    font-size: 16px;
+    color: #cccccc;
+}
+.nav>.nav-item:hover>a{
+    color:#808080;
+}

@@ -1,0 +1,24 @@
+div {
+  height: 0; }
+
+span {
+  width: 210px; }
+
+div {
+  width: 30px; }
+
+p {
+  font-size: 10px/5px;
+  width: 500px;
+  height: 250;
+  margin-left: 9px; }
+
+div:before {
+  content: dsffoasfasdgghhgs; }
+
+#content {
+  color: #ffc8ff;
+  content: "liangliang ate 80" baozi; }
+
+.div {
+  width: 20px; }

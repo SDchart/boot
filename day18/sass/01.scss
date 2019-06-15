@@ -1,0 +1,18 @@
+$myblue:#0aa1ed;
+$fontColor:#fff;
+$myheight:2.5rem;
+@import "mycolor";
+.mybtn{
+  weight: 5rem;
+  height: $myheight;
+  background-color: $myblue;
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: $fontColor;
+  line-height: $myheight;
+  &:hover{
+    color: #f10215;
+  }
+}
